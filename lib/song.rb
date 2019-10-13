@@ -12,10 +12,10 @@ class Song
   extend Findable
   include Paramable
 
-  #def initialize
-  #  self.class.all << self
-  #  @@songs << self
-  #end
+  def initialize
+    super
+    @@songs << self
+  end
 
   def self.all
     @@songs
